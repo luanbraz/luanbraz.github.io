@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ArtCarSom | Insulfilm, som, alarme e ar condicionado automotivo em Sorocaba</title>
+<meta name="description" content="ArtCarSom em Sorocaba: insulfilm e película automotiva, som e multimídia, alarmes, higienização e conserto de ar condicionado, rastreadores e acessórios. Peça orçamento no WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- Dados para o Google entender a loja. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AutoPartsStore",
+  "name": "ArtCarSom",
+  "telephone": "+55 15 98187-4674",
+  "areaServed": "Sorocaba, SP",
+  "openingHours": ["Mo-Fr 09:00-18:00", "Sa 09:00-14:00"],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Av. Edward Frufru Marciano da Silva, 419",
+    "addressLocality": "Sorocaba",
+    "addressRegion": "SP",
+    "addressCountry": "BR"
+  }
+}
+</script>
+
+<style>
+  :root {
+    --asfalto: #141210;
+    --laranja: #E8592A;
+    --amarelo: #FFD60A;
+    --concreto: #E7E6E2;
+    --tinta: #1B1917;
+    --branco: #FFFFFF;
+    --titulo: "Barlow Condensed", "Arial Narrow", Impact, sans-serif;
+    --texto: "Barlow", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: var(--texto);
+    font-size: 1.125rem;
+    line-height: 1.55;
+    color: var(--tinta);
+    background: var(--concreto);
+  }
+  img { max-width: 100%; height: auto; display: block; }
+  a { color: inherit; }
+  :focus-visible { outline: 3px solid var(--amarelo); outline-offset: 3px; }
+
+  .wrap { width: min(1120px, 100% - 2.5rem); margin-inline: auto; }
+
+  /* Botão principal */
+  .btn {
+    display: inline-block;
+    background: var(--amarelo);
+    color: var(--asfalto);
+    font-family: var(--texto);
+    font-weight: 600;
+    font-size: 1.125rem;
+    text-decoration: none;
+    padding: 0.95rem 1.6rem;
+    border: 3px solid var(--asfalto);
+    border-radius: 4px;
+    box-shadow: 5px 5px 0 var(--laranja);
+    transition: transform .12s ease, box-shadow .12s ease;
+  }
+  .btn:hover { transform: translate(2px, 2px); box-shadow: 3px 3px 0 var(--laranja); }
+
+  /* Topo */
+  .topo { background: var(--asfalto); color: var(--branco); }
+  .topo .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 1rem; padding-block: 0.9rem;
+  }
+  .marca { font-family: var(--titulo); font-weight: 700; font-size: 1.9rem; letter-spacing: 0.01em; text-decoration: none; }
+  .marca span { color: var(--laranja); }
+  .topo .btn { padding: 0.55rem 1.1rem; font-size: 1rem; box-shadow: 3px 3px 0 var(--laranja); border-color: var(--amarelo); }
+
+  /* Abertura */
+  .abertura { background: var(--asfalto); color: var(--branco); padding-bottom: 4.5rem; }
+  .abertura .wrap {
+    display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 3rem; align-items: center;
+    padding-top: 2.5rem;
+  }
+  h1 {
+    font-family: var(--titulo); font-weight: 700;
+    font-size: clamp(2.7rem, 6.4vw, 5rem);
+    line-height: 1; margin: 0 0 1.25rem; letter-spacing: -0.005em;
+  }
+  .abertura p { font-size: 1.25rem; max-width: 34rem; margin: 0 0 2rem; color: #E9E5DD; }
+  .fone { margin-top: 1.4rem; font-size: 1rem; color: #C9C4BA; }
+  .fone strong { color: var(--branco); font-weight: 600; }
+
+  .fachada { position: relative; }
+  .fachada::before {
+    content: ""; position: absolute; inset: 1.2rem -1.2rem -1.2rem 1.2rem;
+    background: var(--laranja); border-radius: 4px; z-index: 0;
+  }
+  .fachada img { position: relative; z-index: 1; width: 100%; border-radius: 4px; aspect-ratio: 3 / 4; object-fit: cover; }
+
+  /* Serviços */
+  .servicos { padding-block: 5rem 4rem; }
+  h2 {
+    font-family: var(--titulo); font-weight: 700;
+    font-size: clamp(2.2rem, 4.6vw, 3.4rem); line-height: 1.05; margin: 0 0 0.75rem;
+  }
+  .intro { max-width: 36rem; margin: 0 0 2.5rem; font-size: 1.15rem; }
+  .linhas { border-top: 3px solid var(--asfalto); }
+  .linha {
+    display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 1rem 3rem;
+    padding-block: 1.5rem; border-bottom: 3px solid var(--asfalto);
+  }
+  h3 { font-family: var(--titulo); font-weight: 700; font-size: 2rem; line-height: 1.1; margin: 0; }
+  .linha p { margin: 0; max-width: 34rem; }
+  .destaque h3 { color: var(--laranja); }
+  .destaque { background: var(--asfalto); color: var(--branco); padding-inline: 1.25rem; margin-inline: -1.25rem; }
+
+  /* Faixa de foto */
+  .oficina { background: var(--asfalto); }
+  .oficina img { width: 100%; aspect-ratio: 16 / 7; object-fit: cover; object-position: 50% 62%; }
+  .oficina figcaption { color: #C9C4BA; font-size: 0.95rem; padding-block: 0.8rem; }
+
+  /* Contato */
+  .contato { background: var(--asfalto); color: var(--branco); padding-block: 4.5rem 6rem; }
+  .contato .wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; }
+  .contato h2 { color: var(--amarelo); }
+  .contato p { margin: 0 0 1.75rem; max-width: 30rem; color: #E9E5DD; }
+  dl { margin: 0; }
+  dt { font-family: var(--titulo); font-weight: 600; font-size: 1.4rem; color: var(--laranja); margin-top: 1.4rem; }
+  dt:first-child { margin-top: 0; }
+  dd { margin: 0.15rem 0 0; }
+  dd a { color: var(--branco); }
+  /* Campos que você precisa preencher */
+  .preencher { background: var(--amarelo); color: var(--asfalto); padding: 0 0.35rem; border-radius: 3px; font-weight: 600; }
+
+  .rodape { background: #000; color: #A9A397; font-size: 0.95rem; padding-block: 1.2rem; }
+
+  /* Botão fixo no celular */
+  .zap-fixo { display: none; }
+
+  @media (max-width: 800px) {
+    body { font-size: 1.05rem; }
+    .abertura .wrap { grid-template-columns: 1fr; gap: 3rem; }
+    .fachada { margin-right: 1.2rem; }
+    .linha { grid-template-columns: 1fr; gap: 0.5rem; }
+    .destaque { margin-inline: -1.25rem; }
+    .contato .wrap { grid-template-columns: 1fr; gap: 2.5rem; }
+    .oficina img { aspect-ratio: 4 / 3; }
+    .topo .btn { display: none; }
+    .zap-fixo {
+      display: block; position: fixed; left: 1rem; right: 1rem; bottom: 1rem; z-index: 10;
+      text-align: center; box-shadow: 4px 4px 0 var(--laranja);
+      margin-bottom: env(safe-area-inset-bottom, 0px);
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .btn { transition: none; }
+  }
+</style>
+</head>
+<body>
+
+<header class="topo">
+  <div class="wrap">
+    <a class="marca" href="#">Art<span>Car</span>Som</a>
+    <a class="btn" href="https://wa.me/5515981874674?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener">Chamar no WhatsApp</a>
+  </div>
+</header>
+
+<main>
+  <section class="abertura">
+    <div class="wrap">
+      <div>
+        <h1>Insulfilm, som, alarme e ar condicionado para o seu carro, em Sorocaba.</h1>
+        <p>Aplicamos, instalamos e consertamos na nossa oficina. Chame no WhatsApp, conte qual é o carro e peça seu orçamento.</p>
+        <a class="btn" href="https://wa.me/5515981874674?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener">Pedir orçamento no WhatsApp</a>
+        <div class="fone">Ou ligue: <strong>(15) 98187-4674</strong></div>
+      </div>
+      <div class="fachada">
+        <img src="fachada.jpg" width="960" height="1280" fetchpriority="high"
+             alt="Fachada da ArtCarSom, loja de som, alarmes, insulfilm e acessórios automotivos em Sorocaba, com um carro antigo estacionado na frente">
+      </div>
+    </div>
+  </section>
+
+  <section class="servicos" id="servicos">
+    <div class="wrap">
+      <h2>O que fazemos</h2>
+      <p class="intro">Tudo no mesmo lugar: você deixa o carro e resolve insulfilm, som, alarme e ar condicionado de uma vez.</p>
+
+      <div class="linhas">
+        <div class="linha destaque" id="insulfilm">
+          <h3>Insulfilm e película automotiva</h3>
+          <p>Película Carbon e Nano, proteção solar para carros, insulfilm para para-brisa e remoção de insulfilm antigo.</p>
+        </div>
+        <div class="linha" id="ar-condicionado">
+          <h3>Ar condicionado automotivo</h3>
+          <p>Higienização, conserto e manutenção do ar condicionado do carro.</p>
+        </div>
+        <div class="linha" id="som">
+          <h3>Som e central multimídia</h3>
+          <p>Instalação de som automotivo e de central multimídia.</p>
+        </div>
+        <div class="linha" id="alarme">
+          <h3>Alarme, trava e vidro elétrico</h3>
+          <p>Alarmes automotivos, trava elétrica, automação de vidros elétricos e de retrovisores, e conserto de vidro elétrico.</p>
+        </div>
+        <div class="linha" id="rastreador">
+          <h3>Rastreadores</h3>
+          <p>Rastreadores e bloqueadores para carro, moto e caminhão.</p>
+        </div>
+        <div class="linha" id="acessorios">
+          <h3>Acessórios</h3>
+          <p>Engates, lâmpadas de LED, máquina de vidro e instalação de acessórios em geral.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <figure class="oficina" style="margin:0">
+    <img src="oficina.jpg" width="1400" height="1867" loading="lazy"
+         alt="Carro cinza dentro da oficina da ArtCarSom, com rolos de película e acessórios organizados na parede ao fundo">
+    <div class="wrap"><figcaption>Nossa oficina em Sorocaba, com películas e acessórios à mostra.</figcaption></div>
+  </figure>
+
+  <section class="contato" id="contato">
+    <div class="wrap">
+      <div>
+        <h2>Peça seu orçamento</h2>
+        <p>Mande uma mensagem com o modelo e o ano do carro e o serviço que você quer. Respondemos pelo WhatsApp.</p>
+        <a class="btn" href="https://wa.me/5515981874674?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener">Chamar no WhatsApp</a>
+      </div>
+      <dl>
+        <dt>Telefone e WhatsApp</dt>
+        <dd><a href="tel:+5515981874674">(15) 98187-4674</a></dd>
+
+        <dt>Endereço</dt>
+        <dd>Av. Edward Frufru Marciano da Silva, 419, Sorocaba, SP<br>
+            <a href="https://www.google.com/maps/search/?api=1&query=Av.+Edward+Frufru+Marciano+da+Silva,+419,+Sorocaba,+SP" target="_blank" rel="noopener">Ver no Google Maps</a></dd>
+
+        <dt>Horário</dt>
+        <dd>Segunda a sexta: 9h às 18h<br>
+            Sábado: 9h às 14h</dd>
+      </dl>
+    </div>
+  </section>
+</main>
+
+<footer class="rodape">
+  <div class="wrap">© ArtCarSom, Sorocaba, SP</div>
+</footer>
+
+<a class="btn zap-fixo" href="https://wa.me/5515981874674?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener">Pedir orçamento no WhatsApp</a>
+
+</body>
+</html>
